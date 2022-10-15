@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Menu About Author</title>
+        <title>ABOUT AUTHOR PAGE</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link type="text/css" rel="stylesheet" href="style.css">        
     </head>
     <body>
         <div id="container">
+            <div id="backgroundtop">
             <nav id="menu">
-                <p class="M">Menu</p>
-                <tabel id="TT">
-                    <ul type="circle">
-                        <li class="choice"><a href="layout.html">HOME</a></li>
-                        <li class="choice"><a href="cv-name.pdf" target="_blank">DOWNLOAD CV</a></li>
-                        <li class="choice"><a href="myself.html">About Me</a></li>
-                        <li class="choice"><a href="feedback.html">Kriti dan Saran</a></li>
-                    </ul> 
-                </tabel>
+            <p class="M">MENU</p>
+            <tabel id="TT">
+            <ul type="circle" class="pilih">
+                <li class="choice"><a href="layout.html">HOME</a></li>
+                <li class="choice"><a href="cv-name.pdf" target="_blank">DOWNLOAD CV</a></li>
+                <li class="choice"><a href="myself.html">About Me</a></li>
+                <li class="choice"><a href="feedback.html">Kritik dan Saran</a></li>
+            </ul> 
+            </tabel>
             </nav>
             <div id="header">
-                <p class="H">Header</p>
-                <p class="H1"><u>About Me Page</u></p>
+                <p class="H1"><u>ABOUT ME PAGE</u></p>
             </div>
+            </div> 
             <div id="content">
                 <div class="sidebar">
-                    <p class="I">Hello everyone, my name is AZMI JALALUDDIN AMRON. You can call me AAM. I was born in Demak, December 19, 2004. I have graduated from MAN Demak. I have been living in Semarang for two months. On the side is a video of my experience</p>
+                    <p class="I">Hello everyone, my name is AZMI JALALUDDIN AMRON. You can call me AAM. I was born in Demak, December 19, 2004. On the side is a video of my experience</p>
                 </div>
                 <div class="artikel">
-                    <video>
-
-                    </video>
+                    <p>
+                        <button onclick="playVid()" type="button">Play Video</button>
+                        <button onclick="pauseVid()" type="button">Pause Video</button><br>
+                        <button onclick="makeBig()">Big</button>
+                        <button onclick="makeSmall()">Small</button>
+                        <button onclick="makeNormal()">Normal</button>
+                        <br>
+                        
+                        <button onclick="controlsPlayVid()" type="button">Controls ON</button>
+                        <button onclick="controlsStopVid()" type="button">Controls OFF</button><br>
+                        <button onclick="myFunction()" type="button">Other Video</button>
+                        <button onclick="myFunction0()" type="button">Previous Video</button>
+                        <br>
+                        </p>
+                        <video id="myVideo">
+                            <source id="mp4_src" src="swimming.mp4" type="video/mp4">
+                            <track default src="subtitle.vtt">
+                            Video File not support.....
+                        </video>
+                        <button onclick="getPlaySpeed()" type="button">What is the playback speed?</button>
+                        <button onclick="setPlaySpeed()" type="button">Set video to be play in fast motion</button>
+                        <button onclick="setPlaySlow()" type="button">Set video to be play in slow motion</button><br> 
+                        <br>
+                        <button onclick="enableAutoplay()" type="button">Enable autoplay</button>
+                        <button onclick="disableAutoplay()" type="button">Disable autoplay</button>
+                        <button onclick="checkAutoplay()" type="button">Check autoplay status</button><br> 
+                        <br>
                 </div>
             </div>
             <div id="footer">
-                <p class="F">FOOTER</p>
                 <p class="sorry" align="center" color="green">Mohon maaf apabila masih ada kekurangan dan/ kesalahan.</p>
                 <p align="center"><a href="https://www.instagram.com/aam_12_04"><img src="instagram.jfif" width="25" align="center">@aam_12_04</a><a href="https://www.twitter.com/@LEONOVA22555907
                     "><img src="twitter.png" width="25" height="25" align="center">@LEONOVA22555907 </a></p>
@@ -43,4 +67,73 @@
             </div>
         </div>
     </body>
+    <script>
+        var vid = document.getElementById("myVideo");
+    
+        function playVid() {
+        vid.play();
+        }
+    
+        function pauseVid() {
+        vid.pause();
+        }
+    
+        function getPlaySpeed() { 
+          alert(vid.playbackRate);
+        } 
+    
+        function setPlaySpeed() { 
+          vid.playbackRate = 2;
+        } 
+    
+        function setPlaySlow() { 
+          vid.playbackRate = 0.25;
+        } 
+    
+    
+        function controlsPlayVid() {
+        vid.controls = true;
+        vid.load();
+        }
+    
+        function controlsStopVid() {
+        vid.controls = false;
+        vid.load();
+        }
+    
+        function enableAutoplay() { 
+          vid.autoplay = true;
+         vid.load();
+        }
+    
+        function disableAutoplay() { 
+          vid.autoplay = false;
+          vid.load();
+        } 
+    
+        function checkAutoplay() { 
+          alert(vid.autoplay);
+        } 
+        function makeBig() { 
+        myVideo.width = 512; 
+        } 
+
+        function makeSmall() { 
+        myVideo.width = 128; 
+        } 
+
+        function makeNormal() { 
+        myVideo.width = 256; 
+        } 
+
+        function myFunction() { 
+        document.getElementById("mp4_src").src = "swam.mp4";
+        document.getElementById("myVideo").load();
+        } 
+
+        function myFunction0() { 
+        document.getElementById("mp4_src").src = "swimming.mp4";
+        document.getElementById("myVideo").load();
+        } 
+    </script>
 </html>
