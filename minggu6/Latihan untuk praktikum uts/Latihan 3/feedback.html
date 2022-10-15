@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>HOME PAGE</title>
+        <title>Feedback Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link type="text/css" rel="stylesheet" href="style.css">        
+        <link type="text/css" rel="stylesheet" href="assets/CSS/style.css">        
     </head>
     <body>
         <div id="container">
@@ -14,7 +14,7 @@
             <tabel id="TT">
             <ul type="circle" class="pilih">
                 <li class="choice"><a href="layout.html">HOME</a></li>
-                <li class="choice"><a href="cv-name.pdf" target="_blank">DOWNLOAD CV</a></li>
+                <li class="choice"><a href="assets/Gambar/Mypicture.jpeg" target="_blank">DOWNLOAD CV</a></li>
                 <li class="choice"><a href="myself.html">About Me</a></li>
                 <li class="choice"><a href="feedback.html">Kritik dan Saran</a></li>
             </ul> 
@@ -26,16 +26,67 @@
             </div> 
             <div id="content">
                 <div class="sidebar">
-
+                    <p class="I">Silahkan jika ada kritik atau saran untuk saya, para pembaca bisa mengetik di samping pada kolom yang telah disediakan.</p>
                 </div>
                 <div class="artikel">
-
+                    <form name="fmhs" method="post" action="proses.php">
+                        <fieldset name="wilayah">
+                            <table width="80%">
+                                <tr>
+                                    <td>NIK : </td>
+                                    <td><input type="number" name="fnik" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Nama : </td>
+                                    <td><input type="text" name="fnama" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Tanggal Lahir : </td>
+                                    <td><input type="date" name="ftglhr" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Page Quality : </td>
+                                    <td>
+                                        <select name="fpq" required>
+                                            <option value="">Pilih Kualitas</option>
+                                            <option value="S">Bintang 1</option>
+                                            <option value="SS">Bintang 3</option>
+                                            <option value="SSS">Bintang 5</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Layout Page : </td>
+                                    <td>
+                                        <input type="checkbox" name="fbidang1" value="1"><label>Nice</label><br>
+                                        <input type="checkbox" name="fbidang2" value="2"><label>Good</label><br>
+                                        <input type="checkbox" name="fbidang3" value="3"><label>Beautiful</label><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Gambar saran</td>
+                                    <td><input type="file" name="fgs" required></td>
+                                </tr>
+                            </table>
+                            <label for="email">Email</label>
+                            <br>
+                            <input type="email" list="email" placeholder="Email">
+                            <br>
+                            <label for="message"> Pesan </label>
+                            <br>
+                            <textarea id="message" placeholder="Tulis pesan anda..."
+                           rows="8" cols="80"></textarea>
+                            <br>
+                            <br>
+                            <input type="submit" name="fsubmit" value="Kirim"><br>
+                            <input type="hidden" name="fhidden" value="Rahasia"><br>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
             <div id="footer">
                 <p class="sorry" align="center" color="green">Mohon maaf apabila masih ada kekurangan dan/ kesalahan.</p>
-                <p align="center"><a href="https://www.instagram.com/aam_12_04"><img src="instagram.jfif" width="25" align="center">@aam_12_04</a><a href="https://www.twitter.com/@LEONOVA22555907
-                    "><img src="twitter.png" width="25" height="25" align="center">@LEONOVA22555907 </a></p>
+                <p align="center"><a href="https://www.instagram.com/aam_12_04"><img src="assets/Gambar/instagram.jfif" width="25" align="center">@aam_12_04</a><a href="https://www.twitter.com/@LEONOVA22555907"><img src="assets/Gambar/twitter.png" width="25" height="25" align="center">@LEONOVA22555907 </a></p>
                 <br>
                 <i class="C">Copyright &copy;AAM2022</i>
             </div>

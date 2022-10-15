@@ -4,7 +4,7 @@
         <title>ABOUT AUTHOR PAGE</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link type="text/css" rel="stylesheet" href="style.css">        
+        <link type="text/css" rel="stylesheet" href="assets/CSS/style.css">        
     </head>
     <body>
         <div id="container">
@@ -14,7 +14,7 @@
             <tabel id="TT">
             <ul type="circle" class="pilih">
                 <li class="choice"><a href="layout.html">HOME</a></li>
-                <li class="choice"><a href="cv-name.pdf" target="_blank">DOWNLOAD CV</a></li>
+                <li class="choice"><a href="/assets/Dokumen/cv-name.pdf" target="_blank">DOWNLOAD CV</a></li>
                 <li class="choice"><a href="myself.html">About Me</a></li>
                 <li class="choice"><a href="feedback.html">Kritik dan Saran</a></li>
             </ul> 
@@ -44,8 +44,8 @@
                         <br>
                         </p>
                         <video id="myVideo">
-                            <source id="mp4_src" src="swimming.mp4" type="video/mp4">
-                            <track default src="subtitle.vtt">
+                            <source id="mp4_src" src="assets/Video/swimming.mp4" type="video/mp4">
+                            <track default src="assets/track/subtitle.vtt">
                             Video File not support.....
                         </video>
                         <button onclick="getPlaySpeed()" type="button">What is the playback speed?</button>
@@ -60,8 +60,8 @@
             </div>
             <div id="footer">
                 <p class="sorry" align="center" color="green">Mohon maaf apabila masih ada kekurangan dan/ kesalahan.</p>
-                <p align="center"><a href="https://www.instagram.com/aam_12_04"><img src="instagram.jfif" width="25" align="center">@aam_12_04</a><a href="https://www.twitter.com/@LEONOVA22555907
-                    "><img src="twitter.png" width="25" height="25" align="center">@LEONOVA22555907 </a></p>
+                <p align="center"><a href="https://www.instagram.com/aam_12_04"><img src="assets/Gambar/instagram.jfif" width="25" align="center">@aam_12_04</a><a href="https://www.twitter.com/@LEONOVA22555907
+                    "><img src="assets/Gambar/twitter.png" width="25" height="25" align="center">@LEONOVA22555907 </a></p>
                 <br>
                 <i class="C">Copyright &copy;AAM2022</i>
             </div>
@@ -127,12 +127,12 @@
         } 
 
         function myFunction() { 
-        document.getElementById("mp4_src").src = "swam.mp4";
+        document.getElementById("mp4_src").src = "assets/Video/swam.mp4";
         document.getElementById("myVideo").load();
         } 
 
         function myFunction0() { 
-        document.getElementById("mp4_src").src = "swimming.mp4";
+        document.getElementById("mp4_src").src = "assets/Video/swimming.mp4";
         document.getElementById("myVideo").load();
         } 
     </script>

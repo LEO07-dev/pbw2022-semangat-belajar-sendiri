@@ -63,8 +63,10 @@
     width: 670px;
     height: 700px;
     background-color: #00ffff;
-    background-image: url(Family.jpg);
+    background-image: url(/assets/Gambar/Family.jpg);
     background-image: size(670px, 700px);
+    background-attachment: scroll;
+    -moz-background-origin: padding-box !important;
 }
 
 #footer{
@@ -73,10 +75,11 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    background-image: url(Lookatus.jpg);
+    background-image: url(/assets/Gambar/Lookatus.jpg);
     background-image: size(250px, 500px);
     background-position-y: 50%;
-    backface-visibility: hidden;
+    backface-visibility: visible;
+    background-color: antiquewhite ;
 }
 
 .author{
@@ -120,7 +123,7 @@
 
 .choice{
     display: block;
-    text-decoration: none;
+    text-decoration: none !important;
     color: rgb(113, 231, 23);
     font-weight: bold;
     text-transform: uppercase;
@@ -157,7 +160,8 @@
     font-size: 25px;
     float: justify;
     padding: 30px;
-    color: #ffff;
+    color: #0000ff;
+    text-align: justify;
 }
 
 #T{
@@ -174,16 +178,17 @@
 }
 
 #backgroundtop{
-    background-image: url(together.jpg);
+    background-image: url(/assets/Gambar/together.jpg);
     backface-visibility: visible;
     background-position-x: 50%;
     background-position: size(100% - 10px);
     background-repeat: no-repeat;
+    background-color: #ffe4c4;
 }
 
 @media (max-width: 768px) {
  #container, #menu, #header, #footer, #sidebar, #artikel {
-    width: 100%;
+    width: auto;
     height: auto;
  }
     
