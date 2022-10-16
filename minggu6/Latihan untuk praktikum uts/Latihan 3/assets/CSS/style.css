@@ -186,6 +186,14 @@
     background-color: #ffe4c4;
 }
 
+.Penjelasan{
+    font-style: normal;
+    font-display: Verdana;
+    font-size: 30px;
+    margin: auto;
+    padding: 50px;
+}
+
 @media (max-width: 768px) {
  #container, #menu, #header, #footer, #sidebar, #artikel {
     width: auto;
