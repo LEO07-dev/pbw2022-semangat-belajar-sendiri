@@ -92,6 +92,7 @@
     width: 250px;
     height: 300px;
     margin-left: 10px;
+    align: center;
 }
 
 .status{
@@ -131,10 +132,12 @@
 }
 
 .C{
-    color: #dc143d;
-    font-weight: thin;
-    font-size: 12px;
+    color: #00ffff !important;
+    font-weight: bold;
+    font-size: 21px;
     margin-left: 200px;
+    text-transform: none;
+    text-size-adjust: inherit;
 }
 
 .sorry{
@@ -143,16 +146,12 @@
     font-weight: bold;
     font-size: 15px;
     align-content: center;
+    text-align:center;
 }
 
 .P1, .P2{
     color: red;
     font-size: 20px
-}
-
-#TT{
-    border: thin;
-    border-color: red;
 }
 
 .I{
@@ -183,7 +182,6 @@
     background-position-x: 50%;
     background-position: size(100% - 10px);
     background-repeat: no-repeat;
-    background-color: #ffe4c4;
 }
 
 .Penjelasan{
@@ -200,7 +198,7 @@
     color:rgb(66, 8, 255)
 }
 
-#sights{
+#sights1, #sights2, #sights3, #sights4, #sights5, #sights6{
     width: 230px;
     height: 210px;
 }
@@ -210,6 +208,52 @@
     color:#dc143d;
     text-transform: none;
     text-rendering: optimizeSpeed;
+}
+
+.pilih{
+    type: circle;
+}
+
+.link{
+    text-align:center;
+}
+
+.instagram{
+    width: 25px;
+    image-resolution: autoplay;
+    image-orientation: from-image;
+    image-rendering: pixelated;
+    align-items: center;
+}
+
+.twitter{
+    width: 25px;
+    height: 25px;
+    align-content: center;
+}
+
+.whatsapp{
+    width: 25px;
+    height: 25px;
+    border-image-outset: 1px;
+    image-resolution: autoplay;
+    shape-image-threshold: 1px;
+}
+
+h4{
+    color: #dc143c;
+    text-decoration: none;
+    text-shadow: springgreen;
+    text-rendering: optimizeLegibility;
+    text-decoration-line: inherit;
+}
+
+#sender{
+    width: 80%;
+}
+
+#email{
+    for: email;
 }
 
 @media (max-width: 768px) {
