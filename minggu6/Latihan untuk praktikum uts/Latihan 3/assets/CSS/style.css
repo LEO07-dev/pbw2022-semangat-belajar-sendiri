@@ -194,6 +194,24 @@
     padding: 50px;
 }
 
+.Begitulah{
+    text-align: left;
+    font-size: 36px;
+    color:rgb(66, 8, 255)
+}
+
+#sights{
+    width: 230px;
+    height: 210px;
+}
+
+#sumber{
+    text-align: left;
+    color:#dc143d;
+    text-transform: none;
+    text-rendering: optimizeSpeed;
+}
+
 @media (max-width: 768px) {
  #container, #menu, #header, #footer, #sidebar, #artikel {
     width: auto;

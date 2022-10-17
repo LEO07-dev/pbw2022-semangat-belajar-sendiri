@@ -4,7 +4,17 @@
         <title>ABOUT AUTHOR PAGE</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link type="text/css" rel="stylesheet" href="assets/CSS/style.css">        
+        <link type="text/css" rel="stylesheet" href="assets/CSS/style.css"> 
+        <script>
+            setInterval(() => {
+                let date = new Date();
+                let clock = document.getElementById('clock')
+                clock.innerHTML = 
+                    date.getHours()+":"+
+                    date.getMinutes()+":"+
+                    date.getSeconds()
+            }, 1000);
+        </script>                
     </head>
     <body>
         <div id="container">
@@ -18,6 +28,8 @@
                 <li class="choice"><a href="myself.html">About Me</a></li>
                 <li class="choice"><a href="feedback.html">Kritik dan Saran</a></li>
                 <li class="choice"><a href="youtube.html">My Favorit Video</a></li>
+                <li class="choice"><a href="https://api.whatsapp.com/send?phone=6289529730693" target="_blank">Call Me?</a></li>
+                <li class="choice"><a href="digitalclock.html">Check out the current hours</a></li>
             </ul> 
             </tabel>
             </nav>
@@ -30,6 +42,7 @@
                     <p class="I">Hello everyone, my name is AZMI JALALUDDIN AMRON. You can call me AAM. I was born in Demak, December 19, 2004. On the side is a video of my experience</p>
                 </div>
                 <div class="artikel">
+                    <div id="clock"></div>
                     <p>
                         <button onclick="playVid()" type="button">Play Video</button>
                         <button onclick="pauseVid()" type="button">Pause Video</button><br>

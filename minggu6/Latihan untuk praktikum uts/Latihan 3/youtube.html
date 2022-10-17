@@ -4,7 +4,17 @@
         <title>My Favorit Video PAGE</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link type="text/css" rel="stylesheet" href="assets/CSS/style.css">        
+        <link type="text/css" rel="stylesheet" href="assets/CSS/style.css">      
+        <script>
+            setInterval(() => {
+                let date = new Date();
+                let clock = document.getElementById('clock')
+                clock.innerHTML = 
+                    date.getHours()+":"+
+                    date.getMinutes()+":"+
+                    date.getSeconds()
+            }, 1000);
+        </script>           
     </head>
     <body>
         <div id="container">
@@ -18,6 +28,8 @@
                 <li class="choice"><a href="myself.html">About Me</a></li>
                 <li class="choice"><a href="feedback.html">Kritik dan Saran</a></li>
                 <li class="choice"><a href="youtube.html">My Favorit Video</a></li>
+                <li class="choice"><a href="https://api.whatsapp.com/send?phone=6289529730693" target="_blank">Call Me?</a></li>
+                <li class="choice"><a href="digitalclock.html">Check out the current hours</a></li>
             </ul> 
             </tabel>
             </nav>
@@ -30,6 +42,7 @@
                     <p class="Penjelasan">Jadi di samping adalah video dari youtube yang termasuk dalam video favorit saya. Pastikan ada internet untuk menonton. Hope you enjoyed the video ^_^</p>
                 </div>
                 <div class="artikel">
+                    <div id="clock"></div>
                     <h1 style="color:blue">ROSELIA [FIRE BIRD]</h1>
 	
                     <iframe width="460" height="215" src="https://www.youtube.com/embed/DFaWjiJeunY" 
