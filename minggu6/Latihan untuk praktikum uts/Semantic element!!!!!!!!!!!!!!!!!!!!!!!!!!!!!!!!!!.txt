@@ -1,0 +1,6 @@
+<header></header>
+<content>
+<sidebar></sidebar>
+<artikel></artikel>
+</content>
+<footer></footer>
