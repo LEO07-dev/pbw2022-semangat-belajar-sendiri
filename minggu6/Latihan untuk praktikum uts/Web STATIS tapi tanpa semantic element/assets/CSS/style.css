@@ -13,7 +13,7 @@
     background-color: #fff;
 }
 
-header{
+#header{
     height: 150px;
     width: 960px;
     margin-left: auto;
@@ -43,7 +43,7 @@ header{
 
 }    
 
-content{
+#content{
     width: 960px;
     height: 700px;
     margin-left: auto;
@@ -51,16 +51,14 @@ content{
     background-color: #fff;
 }    
 
-sidebar{
-    margin-right: 1350px;
+.sidebar{
     float: right;
     width: 270px;
     height: 700px;
     background-color: #ffff00;
 }
 
-artikel{
-    margin-left: 1350px;
+.artikel{
     float: left;
     width: 670px;
     height: 700px;
@@ -71,12 +69,12 @@ artikel{
     -moz-background-origin: padding-box !important;
 }
 
-footer{
+#footer{
     width: 970px;
     height: 150px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 800px;
+    margin-top: 20px;
     background-image: url(/assets/Gambar/Lookatus.jpg);
     background-image: size(250px, 500px);
     background-position-y: 50%;
